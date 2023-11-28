@@ -16,8 +16,9 @@
 		B73E773C2AEC237100C19686 /* DiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73E77352AEC237100C19686 /* DiceView.swift */; };
 		B73E773D2AEC237100C19686 /* SavedDiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73E77362AEC237100C19686 /* SavedDiceView.swift */; };
 		B73E773E2AEC237100C19686 /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73E77372AEC237100C19686 /* FileManager-DocumentsDirectory.swift */; };
-		B73E773F2AEC237100C19686 /* SavedDice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73E77382AEC237100C19686 /* SavedDice.swift */; };
+		B73E773F2AEC237100C19686 /* SavedDiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73E77382AEC237100C19686 /* SavedDiceViewModel.swift */; };
 		B763235B2B162B0500AE7C13 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B763235A2B162B0500AE7C13 /* ContentView.swift */; };
+		B763235E2B1630ED00AE7C13 /* AppStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B763235D2B1630ED00AE7C13 /* AppStorage.swift */; };
 		B7E72B7B2AFEE6A100F3956C /* RollViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E72B7A2AFEE6A100F3956C /* RollViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,8 +33,9 @@
 		B73E77352AEC237100C19686 /* DiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiceView.swift; sourceTree = "<group>"; };
 		B73E77362AEC237100C19686 /* SavedDiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedDiceView.swift; sourceTree = "<group>"; };
 		B73E77372AEC237100C19686 /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
-		B73E77382AEC237100C19686 /* SavedDice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedDice.swift; sourceTree = "<group>"; };
+		B73E77382AEC237100C19686 /* SavedDiceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedDiceViewModel.swift; sourceTree = "<group>"; };
 		B763235A2B162B0500AE7C13 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B763235D2B1630ED00AE7C13 /* AppStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorage.swift; sourceTree = "<group>"; };
 		B7E72B7A2AFEE6A100F3956C /* RollViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +69,7 @@
 		B73E77232AEC22F200C19686 /* DiceRollerMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				B763235C2B1630D100AE7C13 /* AppStorage */,
 				B7E72B792AFEDCDD00F3956C /* FileManager */,
 				B7E72B782AFEDCB100F3956C /* View */,
 				B7E72B772AFEDCA300F3956C /* Model */,
@@ -85,11 +88,18 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		B763235C2B1630D100AE7C13 /* AppStorage */ = {
+			isa = PBXGroup;
+			children = (
+				B763235D2B1630ED00AE7C13 /* AppStorage.swift */,
+			);
+			path = AppStorage;
+			sourceTree = "<group>";
+		};
 		B7E72B772AFEDCA300F3956C /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				B73E77322AEC237100C19686 /* Dice.swift */,
-				B73E77382AEC237100C19686 /* SavedDice.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -103,6 +113,7 @@
 				B73E77352AEC237100C19686 /* DiceView.swift */,
 				B73E77342AEC237100C19686 /* SavedDiceDetailView.swift */,
 				B73E77362AEC237100C19686 /* SavedDiceView.swift */,
+				B73E77382AEC237100C19686 /* SavedDiceViewModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -185,8 +196,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B73E773F2AEC237100C19686 /* SavedDice.swift in Sources */,
+				B73E773F2AEC237100C19686 /* SavedDiceViewModel.swift in Sources */,
 				B73E773D2AEC237100C19686 /* SavedDiceView.swift in Sources */,
+				B763235E2B1630ED00AE7C13 /* AppStorage.swift in Sources */,
 				B7E72B7B2AFEE6A100F3956C /* RollViewViewModel.swift in Sources */,
 				B73E773C2AEC237100C19686 /* DiceView.swift in Sources */,
 				B73E773B2AEC237100C19686 /* SavedDiceDetailView.swift in Sources */,

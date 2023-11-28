@@ -36,3 +36,7 @@ struct ContentView: View {
 #Preview {
     ContentView()
 }
+
+
+//NOTES:
+// onde parou: arrumando funçoes de salvar e load de dados salvos no app storage layer. Arrumar no rollview e sua view model.

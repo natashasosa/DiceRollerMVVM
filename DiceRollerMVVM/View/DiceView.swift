@@ -22,7 +22,7 @@ struct DiceView: View {
 
     @State private var savedDiceAlert = false
 
-    @ObservedObject var savedDice: SavedDice
+    //@ObservedObject var savedDice: SavedDice
 
     var body: some View {
         VStack {
@@ -69,9 +69,8 @@ struct DiceView: View {
                     Spacer()
 
                     HStack {
-                        // Histroy Button
                         Button {
-                            saveRolledDice()
+                           // saveRolledDice()
                         } label: {
                             Image(systemName: "square.and.arrow.down.fill")
                                 .font(.title)
@@ -155,15 +154,15 @@ struct DiceView: View {
         }
     }
 
-    func saveRolledDice() {
-        let newDice = Dice(numberOfDice: numberOfDice, diceFaces: diceFaces, diceValues: diceValues)
-
-        savedDice.rolledDice.append(newDice)
-        savedDice.saveDice()
-
-        savedDiceAlert = true
-        print(savedDice.rolledDice.count)
-    }
+//    func saveRolledDice() {
+//        let newDice = Dice(numberOfDice: numberOfDice, diceFaces: diceFaces, diceValues: diceValues)
+//
+//        savedDice.savedDice.append(newDice)
+//        savedDice.saveDice()
+//
+//        savedDiceAlert = true
+//        print(savedDice.savedDice.count)
+//    }
 }
 
 //struct DiceView_Previews: PreviewProvider {

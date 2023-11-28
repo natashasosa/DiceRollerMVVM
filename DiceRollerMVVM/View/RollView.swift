@@ -17,9 +17,6 @@ struct RollView: View {
     @State private var diceValues: [Int] = []
     @State private var showingDiceView = false
 
-    @StateObject private var savedDice = SavedDice()
-
-
     var body: some View {
         NavigationStack {
             VStack(spacing: 50) {
@@ -63,7 +60,7 @@ struct RollView: View {
             .navigationTitle("Select your dice")
             .padding()
             .sheet(isPresented: $showingDiceView) {
-                DiceView(numberOfDice: $numberOfDice, diceFaces: $diceFaces, diceValues: $diceValues, savedDice: savedDice)
+                DiceView(numberOfDice: $numberOfDice, diceFaces: $diceFaces, diceValues: $diceValues)
             }
         }
     }

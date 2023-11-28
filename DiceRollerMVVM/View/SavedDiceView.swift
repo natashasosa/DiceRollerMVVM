@@ -9,13 +9,12 @@ import SwiftUI
 
 struct SavedDiceView: View {
 
-    //@ObservedObject var savedDice: SavedDice
-    var savedDice = SavedDice()
+    @StateObject var viewModel = ViewModel()
 
     var body: some View {
         NavigationView {
             VStack {
-                if savedDice.rolledDice.count < 1 {
+                if viewModel.savedDice.count < 1 {
                     VStack {
                         Image(systemName: "dice.fill")
                             .resizable()
@@ -29,7 +28,7 @@ struct SavedDiceView: View {
                     }
                 } else {
                     List {
-                        ForEach(savedDice.rolledDice) { dice in
+                        ForEach(viewModel.savedDice) { dice in
                             NavigationLink {
                                 SavedDiceDetailView(dice: dice)
                             } label: {
@@ -54,8 +53,8 @@ struct SavedDiceView: View {
                         }
                         .onDelete { indices in
                             if let indexToDelete = indices.first {
-                                let diceToDelete = savedDice.rolledDice[indexToDelete]
-                                savedDice.deleteDice(withID: diceToDelete.id)
+                                let diceToDelete = viewModel.savedDice[indexToDelete]
+                                viewModel.deleteDice(withID: diceToDelete.id)
                             }
                         }
                     }
