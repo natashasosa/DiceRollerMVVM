@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RolledDiceDetailView: View {
+struct SavedDiceDetailView: View {
     @Environment(\.colorScheme) var colorScheme
     let dice: Dice
 

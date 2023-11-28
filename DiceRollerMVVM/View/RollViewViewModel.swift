@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension ContentView {
+extension RollView {
     
     @MainActor
     class ViewModel: ObservableObject {

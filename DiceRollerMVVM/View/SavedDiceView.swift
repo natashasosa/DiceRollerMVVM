@@ -7,9 +7,10 @@
 
 import SwiftUI
 
-struct RolledDiceView: View {
+struct SavedDiceView: View {
 
-    @ObservedObject var savedDice: SavedDice
+    //@ObservedObject var savedDice: SavedDice
+    var savedDice = SavedDice()
 
     var body: some View {
         NavigationView {
@@ -30,7 +31,7 @@ struct RolledDiceView: View {
                     List {
                         ForEach(savedDice.rolledDice) { dice in
                             NavigationLink {
-                                RolledDiceDetailView(dice: dice)
+                                SavedDiceDetailView(dice: dice)
                             } label: {
                                 HStack {
                                     Image(systemName: "dice.fill")
