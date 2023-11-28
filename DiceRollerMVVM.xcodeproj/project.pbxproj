@@ -17,6 +17,7 @@
 		B73E773D2AEC237100C19686 /* RolledDiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73E77362AEC237100C19686 /* RolledDiceView.swift */; };
 		B73E773E2AEC237100C19686 /* FileManager-DocumentsDirectory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73E77372AEC237100C19686 /* FileManager-DocumentsDirectory.swift */; };
 		B73E773F2AEC237100C19686 /* SavedDice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73E77382AEC237100C19686 /* SavedDice.swift */; };
+		B7E72B7B2AFEE6A100F3956C /* ContentViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E72B7A2AFEE6A100F3956C /* ContentViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		B73E77362AEC237100C19686 /* RolledDiceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RolledDiceView.swift; sourceTree = "<group>"; };
 		B73E77372AEC237100C19686 /* FileManager-DocumentsDirectory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager-DocumentsDirectory.swift"; sourceTree = "<group>"; };
 		B73E77382AEC237100C19686 /* SavedDice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedDice.swift; sourceTree = "<group>"; };
+		B7E72B7A2AFEE6A100F3956C /* ContentViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,14 +65,10 @@
 		B73E77232AEC22F200C19686 /* DiceRollerMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				B7E72B792AFEDCDD00F3956C /* FileManager */,
+				B7E72B782AFEDCB100F3956C /* View */,
+				B7E72B772AFEDCA300F3956C /* Model */,
 				B73E77242AEC22F200C19686 /* DiceRollerMVVMApp.swift */,
-				B73E77262AEC22F200C19686 /* ContentView.swift */,
-				B73E77322AEC237100C19686 /* Dice.swift */,
-				B73E77352AEC237100C19686 /* DiceView.swift */,
-				B73E77372AEC237100C19686 /* FileManager-DocumentsDirectory.swift */,
-				B73E77342AEC237100C19686 /* RolledDiceDetailView.swift */,
-				B73E77362AEC237100C19686 /* RolledDiceView.swift */,
-				B73E77382AEC237100C19686 /* SavedDice.swift */,
 				B73E77282AEC22F300C19686 /* Assets.xcassets */,
 				B73E772A2AEC22F300C19686 /* Preview Content */,
 			);
@@ -83,6 +81,35 @@
 				B73E772B2AEC22F300C19686 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B7E72B772AFEDCA300F3956C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B73E77322AEC237100C19686 /* Dice.swift */,
+				B73E77382AEC237100C19686 /* SavedDice.swift */,
+				B73E77362AEC237100C19686 /* RolledDiceView.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B7E72B782AFEDCB100F3956C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B73E77262AEC22F200C19686 /* ContentView.swift */,
+				B7E72B7A2AFEE6A100F3956C /* ContentViewViewModel.swift */,
+				B73E77352AEC237100C19686 /* DiceView.swift */,
+				B73E77342AEC237100C19686 /* RolledDiceDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B7E72B792AFEDCDD00F3956C /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				B73E77372AEC237100C19686 /* FileManager-DocumentsDirectory.swift */,
+			);
+			path = FileManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +184,7 @@
 			files = (
 				B73E773F2AEC237100C19686 /* SavedDice.swift in Sources */,
 				B73E773D2AEC237100C19686 /* RolledDiceView.swift in Sources */,
+				B7E72B7B2AFEE6A100F3956C /* ContentViewViewModel.swift in Sources */,
 				B73E773C2AEC237100C19686 /* DiceView.swift in Sources */,
 				B73E773B2AEC237100C19686 /* RolledDiceDetailView.swift in Sources */,
 				B73E77272AEC22F200C19686 /* ContentView.swift in Sources */,
